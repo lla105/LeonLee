@@ -57,7 +57,7 @@ import {
   ɵɵinject,
   ɵɵinjectAttribute,
   ɵɵstyleProp
-} from "./chunk-JNM7CA4Q.js";
+} from "./chunk-YUUC2MIQ.js";
 
 // node_modules/@angular/common/fesm2022/common.mjs
 var _DOM = null;
@@ -4652,9 +4652,18 @@ export {
   PathLocationStrategy,
   HashLocationStrategy,
   Location,
+  FormStyle,
+  TranslationWidth,
+  getLocaleDayPeriods,
+  getLocaleDayNames,
+  getLocaleMonthNames,
+  formatDate,
   parseCookieValue,
+  NgTemplateOutlet,
+  PercentPipe,
   CommonModule,
   PLATFORM_BROWSER_ID,
+  isPlatformBrowser,
   isPlatformServer,
   ViewportScroller,
   XhrFactory
@@ -4668,4 +4677,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-BBRHE5GZ.js.map
+//# sourceMappingURL=chunk-FPKBZ7QG.js.map
