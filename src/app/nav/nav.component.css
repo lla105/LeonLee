@@ -1,0 +1,9 @@
+.text-glow {
+    text-shadow: 0 0 10px #97a9b8; 
+    transition: text-shadow 0.3s ease-in-out; 
+  }
+  
+  .text-glow:hover {
+    text-shadow: 0 0 15px #97a9b8; 
+  }
+  
