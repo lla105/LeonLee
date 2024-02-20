@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'resume', component: ResumeComponent},
   {path: 'portfolio', component: PortfolioComponent},
-  {path: '**', component: HomeComponent, pathMatch: 'full'}
+  {path: '**', component: HomeComponent, pathMatch: 'full'} // for invalid paths, go home.
 ];
 
 @NgModule({
