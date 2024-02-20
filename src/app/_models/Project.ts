@@ -4,7 +4,7 @@ export interface Project {
     id: number;
     name: string;
     summary: string;
-    descripton: string;
+    description: string;
     projectLink: string;
     pictures: string[];
     // tags: string[];
