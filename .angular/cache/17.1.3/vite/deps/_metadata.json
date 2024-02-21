@@ -1,47 +1,56 @@
 {
-  "hash": "8391a738",
-  "configHash": "8cd130ae",
+  "hash": "e6b39ab3",
+  "configHash": "7f6c15dc",
   "lockfileHash": "1d6b5db7",
-  "browserHash": "569fe1c2",
+  "browserHash": "48f62d16",
   "optimized": {
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "a4695512",
+      "fileHash": "277c96ab",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "71967c9d",
+      "fileHash": "6e325925",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "89362c71",
+      "fileHash": "81c08508",
       "needsInterop": false
     },
     "@ng-bootstrap/ng-bootstrap": {
       "src": "../../../../../node_modules/@ng-bootstrap/ng-bootstrap/fesm2022/ng-bootstrap.mjs",
       "file": "@ng-bootstrap_ng-bootstrap.js",
-      "fileHash": "7db3fec1",
+      "fileHash": "604adb8e",
       "needsInterop": false
     },
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "4c245236",
+      "fileHash": "c434266f",
       "needsInterop": false
     },
     "ngx-bootstrap/modal": {
       "src": "../../../../../node_modules/ngx-bootstrap/modal/fesm2022/ngx-bootstrap-modal.mjs",
       "file": "ngx-bootstrap_modal.js",
-      "fileHash": "4eeea484",
+      "fileHash": "61876ebf",
+      "needsInterop": false
+    },
+    "ngx-bootstrap/carousel": {
+      "src": "../../../../../node_modules/ngx-bootstrap/carousel/fesm2022/ngx-bootstrap-carousel.mjs",
+      "file": "ngx-bootstrap_carousel.js",
+      "fileHash": "94196f6c",
       "needsInterop": false
     }
   },
   "chunks": {
+    "chunk-R45WLY5T": {
+      "file": "chunk-R45WLY5T.js"
+    },
     "chunk-ZBVRUEIX": {
       "file": "chunk-ZBVRUEIX.js"
     },
