@@ -50,6 +50,18 @@ export class ProjectsService {
 
   ];
   constructor() { }
+
+  GetProjects() {
+    return this.projects;
+  }
+
+  GetProjectById(id: number) : Project {
+    let project = this.projects.find(project => project.id === id);
+    if (project === undefined) {
+      throw new TypeError("There's no project that matches the id: " + id);
+    }
+    return project;
+  }
 }
 
 // angular service is similar to component.
