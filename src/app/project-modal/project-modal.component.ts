@@ -14,4 +14,13 @@ export class ProjectModalComponent {
   constructor(public bsModalRef: BsModalRef) {
 
   }
+
+  isVideo(item: string): boolean {
+    return item.endsWith('.mp4');
+  }
+  
+  isImage(item: string): boolean {
+    return item.endsWith('.png') || item.endsWith('.jpg') || item.endsWith('.jpeg');
+  }
+  
 }

@@ -6,15 +6,25 @@
 </div>
 
 <div class="modal-body">
-    <carousel>
+    <carousel [interval]="10000">
+      <div *ngFor="let item of project.pictures">
         <slide>
-            <img src="../../assets/p1.png" alt="slide" style="display:block; width: 100%;">
+          <!-- Check if the item is a video or an image -->
+          <!-- <ng-container *ngIf="isVideo(item)"> -->
+            <!-- Video -->
+            <!-- <video controls loop style="display:block; width: 100%;"> -->
+                <!-- <video autoplay style="width: 100%; max-height: 500px; height: auto; object-fit: contain;">
+                    <source [src]="item" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video> -->
+                  
+          <!-- </ng-container> -->
+          <!-- <ng-container *ngIf="isImage(item)"> -->
+            <!-- Image -->
+            <img [src]="item" alt="slide" style="display:block; width: 100%;">
+          <!-- </ng-container> -->
         </slide>
-        <slide>
-            <img src="../../assets/p2.png" alt="slide" style="display:block; width: 100%;">
-        </slide>
-        <slide>
-            <img src="../../assets/p3.png" alt="slide" style="display:block; width: 100%;">
-        </slide>
+      </div>
     </carousel>
-</div>
+  </div>
+  
