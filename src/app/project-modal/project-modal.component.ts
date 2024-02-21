@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
+import { Project } from '../_models/Project';
 
 @Component({
   selector: 'app-project-modal',
@@ -8,7 +9,9 @@ import { BsModalRef } from 'ngx-bootstrap/modal';
 })
 export class ProjectModalComponent {
 
+  project = {} as Project;
+  
   constructor(public bsModalRef: BsModalRef) {
-    
+
   }
 }
