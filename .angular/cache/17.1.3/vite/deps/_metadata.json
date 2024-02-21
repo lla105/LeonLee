@@ -1,49 +1,55 @@
 {
-  "hash": "600b9313",
-  "configHash": "048a4001",
+  "hash": "8391a738",
+  "configHash": "8cd130ae",
   "lockfileHash": "1d6b5db7",
-  "browserHash": "5fb3afcf",
+  "browserHash": "569fe1c2",
   "optimized": {
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "9436e2db",
+      "fileHash": "a4695512",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "ea181d25",
+      "fileHash": "71967c9d",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "5e8a50df",
+      "fileHash": "89362c71",
       "needsInterop": false
     },
     "@ng-bootstrap/ng-bootstrap": {
       "src": "../../../../../node_modules/@ng-bootstrap/ng-bootstrap/fesm2022/ng-bootstrap.mjs",
       "file": "@ng-bootstrap_ng-bootstrap.js",
-      "fileHash": "b3a353ac",
+      "fileHash": "7db3fec1",
       "needsInterop": false
     },
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "192fee00",
+      "fileHash": "4c245236",
+      "needsInterop": false
+    },
+    "ngx-bootstrap/modal": {
+      "src": "../../../../../node_modules/ngx-bootstrap/modal/fesm2022/ngx-bootstrap-modal.mjs",
+      "file": "ngx-bootstrap_modal.js",
+      "fileHash": "4eeea484",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-CKJ2FRFV": {
-      "file": "chunk-CKJ2FRFV.js"
+    "chunk-ZBVRUEIX": {
+      "file": "chunk-ZBVRUEIX.js"
     },
-    "chunk-L42NEIK5": {
-      "file": "chunk-L42NEIK5.js"
+    "chunk-QVKBAKXQ": {
+      "file": "chunk-QVKBAKXQ.js"
     },
-    "chunk-YUUC2MIQ": {
-      "file": "chunk-YUUC2MIQ.js"
+    "chunk-7DQU4AF6": {
+      "file": "chunk-7DQU4AF6.js"
     }
   }
 }
