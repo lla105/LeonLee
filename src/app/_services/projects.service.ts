@@ -36,7 +36,7 @@ export class ProjectsService {
       pictures: ["../../assets/p1.png","../../assets/p2.png","../../assets/p3.png"], 
       projectLink: "https://github.com/lla105/Networking-Simulator", 
       summary: "C++/Python programs demonstrating the use of Routing Table and Client Server TCP data communication.", 
-      description: "● Developed and implemented SIPP search algorithms in Python for Multi Agent Path Planning (MAPF) via Cooperative A* and Conflict-Based Search (CBS).\n● Also implemented Single Agent Path Planning via A* and SIPP.\n● Benchmarked the combination of the above four algorithms on diverse instances to analyze performance metrics like speed, nodes expanded, and memory usage. Instance classes include agents, map density, and obstacles.", 
+      description: "● A C++/Python program that demonstrates packet forwarding with Routing Table with a given destination IP address.\n ●In addition, it simulates client-server interaction over TCP with added functions for packet loss and corruption simulation.", 
       tags: [Tag.Cpp, Tag.PYTHON]
     },
     {id: 4, 

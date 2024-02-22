@@ -17,6 +17,6 @@ export class HomeComponent implements OnInit{
   }
   ngOnInit(): void {
     // throw new Error('Method not implemented.');
-    this.featuredProject = this.projectService.GetProjectById(1);
+    this.featuredProject = this.projectService.GetProjectById(0);
   }
 }
