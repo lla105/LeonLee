@@ -3,30 +3,40 @@
 <div class="container text-center">
     <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
 
-    <accordion>
-        <accordion-group heading="Work Experience">
-            <div class="text-align: left;">
-                <h2 class="mb-0"> Software Developer</h2>
-                <h3 class="text-primary text-align: left;">BlueBits Technologies Inc.</h3>
-                <ul>
-                    <li> Developed and maintained a client management website using Angular with custom APIs, enabling remote control and mode
-                        customization for physical lockers.
-                    </li>
-                    <li> Restructured data retrieval process, moving from a promise-based approach to a more appropriate pagination + manual button for
-                        retrieval system. This change resulted in >90% improvement in page load times.
-                    </li>
-                    <li> Created cross-platform mobile applications for Android and iPhone using Angular. We have had a 150% increase in download count
-                        across iOS App Store and Google Play Store in the past year.
-                    </li>
-                </ul>
-            </div>
-        </accordion-group>
-        <accordion-group heading="Education">
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div class="btn-link">Work Experience</div>
 
-        </accordion-group>
-
-        <accordion-group heading="Skills">
-
-        </accordion-group>
-    </accordion>
+                    <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                    <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0"> Software Developer</h2>
+                    <h3 class="text-primary text-align: left;">BlueBits Technologies Inc.</h3>
+                    <ul>
+                        <li> Developed and maintained a client management website using Angular with custom APIs, enabling remote control and mode
+                            customization for physical lockers.
+                        </li>
+                        <li> Restructured data retrieval process, moving from a promise-based approach to a more appropriate pagination + manual button for
+                            retrieval system. This change resulted in >90% improvement in page load times.
+                        </li>
+                        <li> Created cross-platform mobile applications for Android and iPhone using Angular. We have had a 150% increase in download count
+                            across iOS App Store and Google Play Store in the past year.
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+            </accordion-group>
+            <accordion-group heading="Education">
+    
+            </accordion-group>
+    
+            <accordion-group heading="Skills">
+    
+            </accordion-group>
+        </accordion>
+    </div>
+    
 </div>
