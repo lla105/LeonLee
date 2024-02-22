@@ -15,6 +15,9 @@ import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { ProjectModalComponent } from './project-modal/project-modal.component'
 import { CarouselModule } from 'ngx-bootstrap/carousel'
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -34,7 +37,10 @@ import { CarouselModule } from 'ngx-bootstrap/carousel'
     AppRoutingModule,
     NgbModule,
     ModalModule.forRoot(),
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    BrowserAnimationsModule,
+    AccordionModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
