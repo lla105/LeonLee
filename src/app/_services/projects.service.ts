@@ -17,11 +17,13 @@ export class ProjectsService {
     },
     {id: 1, 
       name: "Activity Auto Tracker (Android)", 
-      pictures: ["../../assets/Android_map.jpg","src/assets/Android_profile.jpg","src/assets/Android_history.jpg"], 
+      pictures: ["../../assets/Android_history.jpeg","../../assets/Android_weka.jpeg"], 
       projectLink: "https://github.com/lla105/MyRun2", 
       summary: "An Android app that identifies & tracks user workout via Weka classifier.", 
-      description: "●Collected activity data (standing, walking, running), applied Weka for machine learning, integrated the generated model into an app for real-time activity identification.\n● Implemented Google Maps API with a personal token to enable automatic GPS data tracking in the project.\n● Utilized core smartphone functions (eg gyroscope, accelerometer) to determine speed and location, enhancing GPS data accuracy in the project.", 
-      tags: [Tag.KOTLIN, Tag.JAVA, Tag.GOOGLE_API, Tag.WEKA]
+      description: `Collected activity data (standing, walking, running), applied Weka for machine learning, integrated the generated model into an app 
+      for real-time activity identification. Implemented Google Maps API with a personal token to enable automatic GPS data tracking in the project.
+      Utilized core smartphone functions (e.g., gyroscope, accelerometer) to determine speed and location, enhancing GPS data accuracy in the project.`,
+    tags: [Tag.KOTLIN, Tag.JAVA, Tag.GOOGLE_API, Tag.WEKA]
     },
     {id: 2, 
       name: "AI Class Project - SIPP", 
