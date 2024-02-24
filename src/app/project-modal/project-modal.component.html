@@ -5,8 +5,8 @@
     <button class="btn-close" (click)="bsModalRef.hide()"></button>
 </div>
 
-<div class="modal-body">
-    <carousel [interval]="10000" [isAnimated]="true">
+<div class="modal-body" style="padding: 8%;">
+    <carousel [interval]="10000" [isAnimated]="true" >
       <div *ngFor="let item of project.pictures">
         <slide>
             <img [src]="item" alt="slide" style="display:block; width: 100%;">

@@ -7,6 +7,8 @@
     <!-- router-outlet lets /home and /portfolio etc in the URL work. -->
     <!-- eg) http://localhost:50374/home brings you to home.html -->
     <div style=" height: 100%;">
-        <router-outlet></router-outlet>
+        <!-- <main [@routeAnimations]="prepareRoute(outlet)" class="content">
+        </main> -->
+        <router-outlet #outlet="outlet"></router-outlet>
     </div>
 </body>

@@ -1,12 +1,21 @@
 
 <div class="card shadow text-center" style="max-width:350px; min-width: 350px;">
-    <div class="card-body">
+    <div class="card-body" >
         <h5 class="card-title">{{project.name}}</h5>
         <p class="card-text">{{project.summary}}</p>
+
+        <carousel [interval]="10000" [isAnimated]="true">
+            <div *ngFor="let item of project.pictures">
+                <slide>
+                    <img [src]="item" alt="slide" style="display: block; width: 100%;">
+                </slide>
+            </div>
+        </carousel>
+        <div style="height: 20px;"></div>
         <button class="btn btn-primary" (click)="OpenProjectModal()">View More</button>
     </div>
 
-    <div class="card-footer">
+    <div class="card-footer" style="height: 85px; overflow: hidden;">
         <div class="d-flex flex-wrap justify-content-center">
             <div *ngFor="let tag of project.tags">
                 <!-- style.background is data binding -->
@@ -14,4 +23,5 @@
             </div>
         </div>
     </div>
+    
 </div>
