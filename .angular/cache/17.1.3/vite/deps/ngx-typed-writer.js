@@ -2,7 +2,7 @@ import {
   CommonModule,
   NgIf,
   isPlatformBrowser
-} from "./chunk-QVKBAKXQ.js";
+} from "./chunk-EWA2JBOP.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -31,7 +31,8 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-7DQU4AF6.js";
+} from "./chunk-WFJZ4GXX.js";
+import "./chunk-QOHD3WUR.js";
 
 // node_modules/ngx-typed-writer/fesm2022/ngx-typed-writer.mjs
 var _c0 = ["typedText"];

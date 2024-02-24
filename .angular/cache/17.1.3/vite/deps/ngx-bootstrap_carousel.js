@@ -8,7 +8,7 @@ import {
   NgIf,
   NgStyle,
   isPlatformBrowser
-} from "./chunk-QVKBAKXQ.js";
+} from "./chunk-EWA2JBOP.js";
 import {
   Component,
   EventEmitter,
@@ -46,7 +46,8 @@ import {
   ɵɵstyleProp,
   ɵɵtemplate,
   ɵɵtext
-} from "./chunk-7DQU4AF6.js";
+} from "./chunk-WFJZ4GXX.js";
+import "./chunk-QOHD3WUR.js";
 
 // node_modules/ngx-bootstrap/carousel/fesm2022/ngx-bootstrap-carousel.mjs
 function CarouselComponent_ng_container_1_li_2_Template(rf, ctx) {

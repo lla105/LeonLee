@@ -11,7 +11,7 @@ import {
   CommonModule,
   DOCUMENT,
   isPlatformBrowser
-} from "./chunk-QVKBAKXQ.js";
+} from "./chunk-EWA2JBOP.js";
 import {
   ApplicationRef,
   Component,
@@ -36,8 +36,6 @@ import {
   Subject,
   TemplateRef,
   ViewContainerRef,
-  __spreadProps,
-  __spreadValues,
   animationFrameScheduler,
   fromEvent,
   merge,
@@ -60,7 +58,11 @@ import {
   ɵɵprojection,
   ɵɵprojectionDef,
   ɵɵresolveWindow
-} from "./chunk-7DQU4AF6.js";
+} from "./chunk-WFJZ4GXX.js";
+import {
+  __spreadProps,
+  __spreadValues
+} from "./chunk-QOHD3WUR.js";
 
 // node_modules/ngx-bootstrap/focus-trap/fesm2022/ngx-bootstrap-focus-trap.mjs
 var _FocusTrapManager = class _FocusTrapManager {
