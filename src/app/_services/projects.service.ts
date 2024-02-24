@@ -29,7 +29,7 @@ export class ProjectsService {
       name: "AI Class Project - SIPP", 
       pictures: ["../../assets/MAPF1.gif","../../assets/MAPF2.gif","../../assets/MAPF3.jpeg"], 
       projectLink: "https://github.com/lla105/417Project", 
-      summary: "a Python-based Safe Interval Path Planning (SIPP) system for Multi-Agent Path Planning.", 
+      summary: "A Python-based Safe Interval Path Planning (SIPP) system for Multi-Agent Path Planning.", 
       description: "● Developed and implemented SIPP search algorithms in Python for Multi Agent Path Planning (MAPF) via Cooperative A* and Conflict-Based Search (CBS).\n● Also implemented Single Agent Path Planning via A* and SIPP.\n● Benchmarked the combination of the above four algorithms on diverse instances to analyze performance metrics like speed, nodes expanded, and memory usage. Instance classes include agents, map density, and obstacles.", 
       tags: [Tag.PYTHON]
     },

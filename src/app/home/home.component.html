@@ -1,32 +1,41 @@
 <div class="container">
     <div class="row">
         <!-- About me -->
-        <div class="col-lg shadow border m-1">
+        <div class="col-lg shadow border m-1 rounded-4" style="padding: 30px;">
             <div class="text-center">
                 <h2>About Me</h2>
+                <div style="height:20px;"></div>
                 <img src="../../assets/dp.png" alt="profile picture" style="width:50%" class="rounded-circle">
-
+                <div style="height:30px;"></div>
                 <p>I'm Leon Lee, a soon-to-be Computer Science graduate from Simon Fraser University. Currently, I'm a Software Developer specializing in Angular. </p>
                 <p>Beyond work, I enjoy crafting niche projects with Python, C++, and Kotlin. Excited about the intersection of technology and creativity, I bring a passion for problem-solving and a dedication to continuous learning.</p>
             </div>
         </div>
         <!-- Featured projects -->
-        <div class="col-lg shadow border m-1">
+        <div class="col-lg shadow border m-1 rounded-4" style="padding: 30px;">
             <div class="text-center">
                 <h2>Featured</h2>
+                <div style="height:20px;"></div>
+
                 <h4>{{featuredProject.name}}</h4>
             </div>
 
-            <carousel [interval]="10000">
-                <div *ngFor="let item of featuredProject.pictures">
-                  <slide>
-                      <img [src]="item" alt="slide" style="display:block; width: 100%;">
-                  </slide>
-                </div>
-              </carousel>
+            <div class="flex-grow-1 overflow-hidden">
+                <carousel [interval]="10000" [isAnimated]="true">
+                    <div *ngFor="let item of featuredProject.pictures">
+                        <slide>
+                            <img [src]="item" alt="slide" style="display: block; width: 100%;">
+                        </slide>
+                    </div>
+                </carousel>
+            </div>
+            <div style="height:20px;"></div>
 
-              <p class="mt-2">{{featuredProject.summary}}</p>
-              <p>Visit the Porfolio section to learn more!</p> 
+            <div class="text-container bottom-20">
+                <p class="mt-2">{{featuredProject.summary}}</p>
+                <p>Visit the Portfolio section to learn more!</p> 
+            </div>
+
         </div>
     </div>
 </div>
