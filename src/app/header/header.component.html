@@ -1,9 +1,23 @@
-<div class="container">
+<div class="container justify-content-center">
     <div class="row">
         <div class="col-md-6">
             <div class="d-flex justify-content-start">
-                <div style="width: 50%; background-color: #e0e0e0; padding: 0px;">
+                <div style="width: 90%; background-color: #e0e0e0; padding: 0px;">
                     <h1 class="display-4">Leon Lee</h1>
+                    <ngx-typed-writer
+                        [strings]="[
+                                'I create with: <strong>Angular (HTML / CSS / Typescript)</strong>',
+                                'Also <strong>C / C++</strong>',
+                                'And a lot of <strong>Python</strong>',
+                                'I\'ve dabbled in app development with <strong>Kotlin</strong>',
+                                'Hope you enjoy your time here',
+                                ' '
+                            ]"
+                        [isHTML]="true"
+                        [backSpeed]="20"
+                        [typeSpeed]="30"
+                        >
+                    </ngx-typed-writer>
                 </div>
             </div>
         </div>

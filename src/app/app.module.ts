@@ -18,6 +18,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel'
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxTypedWriterModule } from 'ngx-typed-writer';
 
 
 @NgModule({
@@ -40,7 +41,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CarouselModule.forRoot(),
     BrowserAnimationsModule,
     AccordionModule.forRoot(),
-    FormsModule
+    FormsModule,
+    NgxTypedWriterModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
