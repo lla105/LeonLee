@@ -22,7 +22,6 @@ import {
       ),
       query(
         ':leave',
-        // here we apply a style and use the animate function to apply the style over 0.3 seconds
         [
           style({
             opacity: 1,
