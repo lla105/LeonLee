@@ -6,7 +6,7 @@
 
     <!-- router-outlet lets /home and /portfolio etc in the URL work. -->
     <!-- eg) http://localhost:50374/home brings you to home.html -->
-    <div style=" height: 100%;" [@slideInAnimation]="o.isActivated ? o.activatedRoute : ''">
+    <div style=" height: 100%;" [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
         <router-outlet #o="outlet"></router-outlet>
     </div>
 </body>

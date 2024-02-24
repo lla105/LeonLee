@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { slideInAnimation } from './app.animation';
+import { fadeAnimation } from './app.animation';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  animations: [slideInAnimation]
+  animations: [fadeAnimation]
 })
 export class AppComponent {
   title = 'AngularPortfolioWebsite2';
