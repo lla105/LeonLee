@@ -13,11 +13,11 @@ export class ProjectsService {
       projectLink: "https://github.com/lla105/AuTransactions", 
       summary: "A paid project for managing a client's day care business.", 
       description: "a CRM & accounting solution in Python with tkinter GUI, Google API, and MySQL, achieving a 50% reduction in dataretrieval time compared to previous system.", 
-      tags: [Tag.PYTHON, Tag.TKINTER, Tag.GOOGLE_API, Tag.SQL]
+      tags: [Tag.PYTHON, Tag.TKINTER, Tag.GOOGLE_API, Tag.SQL] 
     },
     {id: 1, 
       name: "Activity Auto Tracker (Android)", 
-      pictures: ["../../assets/Android_bike.gif", "../../assets/Android_history.jpeg","../../assets/Android_weka.jpeg"], 
+      pictures: ["../../assets/Android_bike.gif", "../../assets/Andriod_map.jpeg","../../assets/Android_weka.jpeg"], 
       projectLink: "https://github.com/lla105/MyRun2", 
       summary: "An Android app that identifies & tracks user workout via Weka classifier.", 
       description: `Collected activity data (standing, walking, running), applied Weka for machine learning, integrated the generated model into an app 
@@ -27,7 +27,7 @@ export class ProjectsService {
     },
     {id: 2, 
       name: "AI Class Project - SIPP", 
-      pictures: ["../../assets/p1.png","../../assets/p2.png","../../assets/p3.png"], 
+      pictures: ["../../assets/MAPF1.gif","../../assets/MAPF2.gif","../../assets/MAPF3.jpeg"], 
       projectLink: "https://github.com/lla105/417Project", 
       summary: "a Python-based Safe Interval Path Planning (SIPP) system for Multi-Agent Path Planning.", 
       description: "● Developed and implemented SIPP search algorithms in Python for Multi Agent Path Planning (MAPF) via Cooperative A* and Conflict-Based Search (CBS).\n● Also implemented Single Agent Path Planning via A* and SIPP.\n● Benchmarked the combination of the above four algorithms on diverse instances to analyze performance metrics like speed, nodes expanded, and memory usage. Instance classes include agents, map density, and obstacles.", 
@@ -35,7 +35,7 @@ export class ProjectsService {
     },
     {id: 3, 
       name: "Packet Forwarding & Client Server TCP", 
-      pictures: ["../../assets/packetforward.jpeg","../../assets/p2.png","../../assets/p3.png"], 
+      pictures: ["../../assets/packetforward.jpeg","../../assets/TCP.jpeg","../../assets/TCP2.jpeg"], 
       projectLink: "https://github.com/lla105/Networking-Simulator", 
       summary: "C++/Python programs demonstrating the use of Routing Table and Client Server TCP data communication.", 
       description: "● A C++/Python program that demonstrates packet forwarding with Routing Table with a given destination IP address.\n ●In addition, it simulates client-server interaction over TCP with added functions for packet loss and corruption simulation.", 
