@@ -6,7 +6,7 @@
         <!-- <button class="btn btn-primary" (click)="OpenProjectModal()">View More</button> -->
     </div>
 
-    <carousel [interval]="10000" [isAnimated]="true">
+    <carousel [interval]="10000" [isAnimated]="true" [showIndicators]="false">
         <div *ngFor="let item of project.pictures">
             <slide>
                 <img [src]="item" alt="slide" style="display: block; width: 100%; height: 100%; overflow:hidden;">
