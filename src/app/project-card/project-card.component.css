@@ -1,19 +1,28 @@
 .card {
-    position: relative;
-  }
-  
-  .card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0); /* Adjust the color and opacity as needed */
-    z-index: 1;
-  }
-  
-  .card:hover::after {
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust the hover color and opacity as needed */
-  }
-  
+  position: relative;
+  overflow: hidden; /* Ensure the overlay covers the entire card */
+}
+
+.card::after {
+  content: 'Click to View More';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; /* Text color */
+  font-size: 18px; /* Adjust font size as needed */
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the background color and opacity as needed */
+  width: 100%; /* Full width of the card */
+  height: 100%; /* Full height of the card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+  transition: opacity 0.3s ease; /* Add a transition effect for smooth visibility */
+}
+
+.card:hover::after {
+  opacity: 1;
+}

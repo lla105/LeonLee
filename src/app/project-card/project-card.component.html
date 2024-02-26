@@ -1,11 +1,16 @@
 
-<div class="card shadow text-center" style="max-width:350px; min-width: 350px;" (click)="OpenProjectModal()">
-    <div class="card-body">
-        <h5 class="card-title">{{project.name}}</h5>
+<!-- <div class="card shadow text-center rounded-4" style="max-width:350px; min-width: 350px;" (click)="OpenProjectModal()">
+    <div class="card-body"> -->
+
+<div class="card rounded-4" style="max-width: 350px; min-width: 350px; overflow: hidden; position: relative;" (click)="OpenProjectModal()">
+    <div class="card-content">
+        <div style="height:10px;"></div>
+
+        <h5 class="card-title text-center"><strong>{{project.name}}</strong></h5>
         <p style="overflow: hidden;" class="card-text">{{project.summary}}</p> 
         <!-- <button class="btn btn-primary" (click)="OpenProjectModal()">View More</button> -->
     </div>
-
+    <!-- <div style="padding: 30px; background-color: white;"> -->
     <carousel [interval]="10000" [isAnimated]="true" [showIndicators]="false">
         <div *ngFor="let item of project.pictures">
             <slide>
