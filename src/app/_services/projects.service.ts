@@ -9,7 +9,7 @@ export class ProjectsService {
   projects: Project[] = [
     {id: 0, 
       name: "CRM Accounting Software", 
-      pictures: ["../../assets/Au2.gif","../../assets/Au1.png","../../assets/Au3.png"], 
+      pictures: ["../../assets/Au2.gif","../../assets/Au1.jpeg","../../assets/Au3.jpeg"], 
       projectLink: "https://github.com/lla105/AuTransactions", 
       summary: "A paid project for managing a client's day care business.", 
       description: "a CRM & accounting solution in Python with tkinter GUI, Google API, and MySQL, achieving a 50% reduction in dataretrieval time compared to previous system.", 
@@ -17,7 +17,7 @@ export class ProjectsService {
     },
     {id: 1, 
       name: "Activity Auto Tracker (Android)", 
-      pictures: ["../../assets/Android_bike.gif", "../../assets/Andriod_map.jpeg","../../assets/Android_weka.jpeg"], 
+      pictures: ["../../assets/Android_bike.gif", "../../assets/Android_map.jpeg","../../assets/Android_weka.jpeg"], 
       projectLink: "https://github.com/lla105/MyRun2", 
       summary: "An Android app that identifies & tracks user workout via Weka classifier.", 
       description: `Collected activity data (standing, walking, running), applied Weka for machine learning, integrated the generated model into an app 

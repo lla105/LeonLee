@@ -13,7 +13,7 @@ export class ProjectCardComponent {
   bsModalRef?: BsModalRef; // a reference to our modal
 
   constructor(private modalService: BsModalService) {
-
+    
   }
 
   OpenProjectModal() {
