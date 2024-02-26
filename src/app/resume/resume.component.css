@@ -6,3 +6,28 @@ accordion-group::ng-deep .card-header {
     background-color: #007bff;
 }
 
+.resume {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.resume::after {
+    content: 'Click to Download';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.resume:hover::after {
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+}
+
+  

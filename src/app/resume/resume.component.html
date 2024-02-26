@@ -1,85 +1,139 @@
-<div style="height:20px;"></div>
+<div style="height:50px;"></div>
 
 <div class="container text-center">
-    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+    <!-- <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button> -->
 
-    <div class="pb-2">
-        <accordion [isAnimated]="true" class="shadow">
-            <accordion-group [(isOpen)]="isWorkExperienceOpen">
-                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
-                    <div style="visibility: hidden;">></div>
-                    <div class="btn-link">Work Experience</div>
-                    <div style="width: 10.95px">
-                        <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
-                        <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
-                    </div>
-  
-                </button>
-                <div style="text-align: left;">
-                    <div class="row">
-                        <div class="col-md-6 mb-2" >
-                            <h2 class="mb-0"> Software Developer</h2>
+    <div class="row">
+        <!-- RESUME on the left -->
+        <div class="col-md-6">
+            <img src="assets/resume.png" class="resume" alt="Leon_Lee_resume" width="500" height="600" (click)="DownloadFile()">
+        </div>
+        
+        
+        <!-- ACCORDIN on the right -->
+        <div class="col-md-6">
+            <div class="pb-2">
+                <accordion [isAnimated]="true" class="shadow">
+                    <!-- WORK EXPERIENCE SECTION -->
+                    <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                            <div style="visibility: hidden;">></div>
+                            <div class="btn-link">Work Experience</div>
+                            <div style="width: 10.95px">
+                                <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                                <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+                            </div>
+          
+                        </button>
+                        <div style="text-align: left;">
+                            <div class="row">
+                                <div class="col-md-6 mb-2" >
+                                    <h4 class="mb-0"> Software Developer</h4>
+                                </div>
+                                <div class="col-md-6 mb-2" >
+                                    <h4 class="mb-0" style="text-align: right;"> 2022 - Present</h4>
+                                </div>
+                            </div>
+        
+                            <h4 class="text-primary text-align: left;">BlueBits Technologies Inc.</h4>
+                            <ul>
+                                <li style="font-size: 14px;"> Developed and maintained a client management website using Angular with custom APIs, enabling remote control and mode
+                                    customization for physical lockers.
+                                </li>
+                                <li style="font-size: 14px;"> Restructured data retrieval process, moving from a promise-based approach to a more appropriate pagination + manual button for
+                                    retrieval system. This change resulted in >90% improvement in page load times.
+                                </li>
+                                <li style="font-size: 14px;"> Created cross-platform mobile applications for Android and iPhone using Angular. We have had a 150% increase in download count
+                                    across iOS App Store and Google Play Store in the past year.
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-md-6 mb-2" >
-                            <h2 class="mb-0" style="text-align: right;"> 2022 - Present</h2>
+        
+                        <hr>
+        
+
+                        <div style="text-align: left;">
+                            <div class="row">
+                                <div class="col-md-6 mb-2" >
+                                    <h4 class="mb-0"> Software QA</h4>
+                                </div>
+                                <div class="col-md-6 mb-2" >
+                                    <h4 class="mb-0" style="text-align: right;"> 2021 - 2022</h4>
+                                </div>
+                            </div>
+        
+                            <h4 class="text-primary text-align: left;">Bluemyth</h4>
+                            <ul>
+                                <li style="font-size: 14px;"> Utilized Android Studio to monitor machine and app performance, optimizing RAM usage and identifying potential issues, resulting in a 15% reduction in app crashes.
+                                </li>
+                                <li style="font-size: 14px;"> Developed and implemented test plans and strategies, contributing to a 20% increase in overall test coverage.
+                                </li>
+                                <li style="font-size: 14px;"> Conducted performance testing on the Android machine, optimizing API calls and reducing average response time by 18%.
+                                </li>
+                            </ul>
                         </div>
-                    </div>
 
-                    <h3 class="text-primary text-align: left;">BlueBits Technologies Inc.</h3>
-                    <ul>
-                        <li> Developed and maintained a client management website using Angular with custom APIs, enabling remote control and mode
-                            customization for physical lockers.
-                        </li>
-                        <li> Restructured data retrieval process, moving from a promise-based approach to a more appropriate pagination + manual button for
-                            retrieval system. This change resulted in >90% improvement in page load times.
-                        </li>
-                        <li> Created cross-platform mobile applications for Android and iPhone using Angular. We have had a 150% increase in download count
-                            across iOS App Store and Google Play Store in the past year.
-                        </li>
-                    </ul>
-                </div>
-
-                <hr>
+                    </accordion-group>
 
 
+                    <!-- EDUCATION SECTION -->
+                    <accordion-group [(isOpen)]="isEducationOpen">
+                        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                            <div style="visibility: hidden;">></div>
+                            <div class="btn-link">Education</div>
+                            <div style="width: 10.95px">
+                                <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                                <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                            </div>
+                        </button>
 
-            </accordion-group>
-            <accordion-group heading="Education">
-                <div style="text-align: left;">
-                    <div class="row">
-                        <div class="col-md-6 mb-2" >
-                            <h2 class="mb-0">Simon Fraser University</h2>
+                        <div style="text-align: left;">
+                            <div class="row">
+                                <div class="col-md-6 mb-2" >
+                                    <h4 class="mb-0">Simon Fraser University</h4>
+                                </div>
+                                <div class="col-md-6 mb-2" >
+                                    <h4 class="mb-0" style="text-align: right;"> 2020 - 2024</h4>
+                                </div>
+                            </div>
+        
+                            <h4 class="text-primary text-align: left;">Computer Science</h4>
+                                    <p>Core Topics:</p>
+                                    <ul>
+
+                                        <li style="font-size: 14px;">Algorithm design, Data Structures, OOP, Database Systems (SQL), Operating Systems (Assembly, RISC-V), Networking, UX Design, System Security, Cryptography, AI Algorithms, Machine Learning Algorithms.</li>
+
+                                    </ul>
+                            
                         </div>
-                        <div class="col-md-6 mb-2" >
-                            <h2 class="mb-0" style="text-align: right;"> 2020 - 2024</h2>
-                        </div>
-                    </div>
+                    </accordion-group>
+            
+                    <!-- SKILLS SECTION -->
+                    <accordion-group [(isOpen)]="isSkillsOpen">
+                        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                            <div style="visibility: hidden;">></div>
+                            <div class="btn-link">Skills</div>
+                            <div style="width: 10.95px">
+                                <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+                                <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+                            </div>
+                        </button>
 
-                    <h3 class="text-primary text-align: left;">Computer Science</h3>
-                    <ul>
-                        <li>
-                            <p>Core Topics:</p>
-                        </li>
-                        <li>Algorithm design, Data Structures, OOP, Database Systems (SQL), Operating Systems (Assembly, RISC-V), Networking, UX Design, System Security, Cryptography, AI Algorithms, Machine Learning Algorithms.</li>
-                    </ul>
-                    
-                </div>
-            </accordion-group>
-    
-            <accordion-group heading="Skills">
+                        <ul>
+                            <li>
+                                C | C++ | Python | JavaScript | TypeScript | Kotlin | Angular | HTML | CSS | SQL | GitHub | GitLab | Weka | Figma
+                            </li>
+                            <li>
+                                linux | Bash | Frontend | Backend | Full-Stack | Google API | English, Mandarin, Cantonese – All professional proficiency
+                            </li>
+                        </ul>
+                    </accordion-group>
+                </accordion>
+            </div>
 
-                <ul>
-                <li>
-                • C | C++ | Python | JavaScript | TypeScript | Kotlin | Angular | HTML | CSS | SQL | GitHub | GitLab | Weka | Figma
+        </div>
 
-                </li>
-                <li>
-                    • Linux | Bash | Frontend | Backend | Full-Stack | Google API | English, Mandarin, Cantonese – All professional proficiency
-
-                </li>
-                </ul>
-            </accordion-group>
-        </accordion>
     </div>
+   
     
 </div>
