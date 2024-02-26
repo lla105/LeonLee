@@ -9,7 +9,7 @@ export class ProjectsService {
   projects: Project[] = [
     {id: 0, 
       name: "CRM Accounting Software", 
-      pictures: ["../../assets/Au2.gif","../../assets/Au1.png","../../assets/Au3.png"], 
+      pictures: ["../../assets/Au2.gif","../../assets/Au1.jpeg","../../assets/Au3.jpeg"], 
       projectLink: "https://github.com/lla105/AuTransactions", 
       summary: "A paid project for managing a client's day care business.", 
       description: "a CRM & accounting solution in Python with tkinter GUI, Google API, and MySQL, achieving a 50% reduction in dataretrieval time compared to previous system.", 
@@ -29,12 +29,12 @@ export class ProjectsService {
       name: "AI Class Project - SIPP", 
       pictures: ["../../assets/MAPF1.gif","../../assets/MAPF2.gif","../../assets/MAPF3.jpeg"], 
       projectLink: "https://github.com/lla105/417Project", 
-      summary: "A Python-based Safe Interval Path Planning (SIPP) system for Multi-Agent Path Planning.", 
+      summary: "Safe Interval Path Planning (SIPP) system for Multi-Agent Path Planning.", 
       description: "● Developed and implemented SIPP search algorithms in Python for Multi Agent Path Planning (MAPF) via Cooperative A* and Conflict-Based Search (CBS).\n● Also implemented Single Agent Path Planning via A* and SIPP.\n● Benchmarked the combination of the above four algorithms on diverse instances to analyze performance metrics like speed, nodes expanded, and memory usage. Instance classes include agents, map density, and obstacles.", 
-      tags: [Tag.PYTHON]
+      tags: [Tag.PYTHON, Tag.ALGO, Tag.AI]
     },
     {id: 3, 
-      name: "Packet Forwarding & Client Server TCP", 
+      name: "Packet Forwarding/Client Server TCP", 
       pictures: ["../../assets/packetforward.jpeg","../../assets/TCP.jpeg","../../assets/TCP2.jpeg"], 
       projectLink: "https://github.com/lla105/Networking-Simulator", 
       summary: "C++/Python programs demonstrating the use of Routing Table and Client Server TCP data communication.", 
@@ -45,7 +45,7 @@ export class ProjectsService {
       name: "This Porfolio Website", 
       pictures: ["../../assets/p1.png","../../assets/p2.png","../../assets/p3.png"], 
       projectLink: "https://github.com/lla105/AngularPortfolioWebsite", 
-      summary: "An Angular webpage built to showcase my software journey.", 
+      summary: "An Angular webpage built to showcase my software journey. Constantly being updated.", 
       description: "", 
       tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS]
     },
