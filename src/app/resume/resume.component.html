@@ -19,7 +19,7 @@
         <!-- ACCORDIN on the right -->
         <div class="col-md-6">
             <div class="pb-2">
-                <accordion [isAnimated]="true" class="shadow">
+                <accordion [isAnimated]="true" class="shadow" [closeOthers]="oneAtATime">
                     <!-- WORK EXPERIENCE SECTION -->
                     <accordion-group [(isOpen)]="isWorkExperienceOpen">
                         <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>

@@ -11,6 +11,7 @@ export class ResumeComponent {
   isWorkExperienceOpen: boolean = false;
   isEducationOpen: boolean = false;
   isSkillsOpen: boolean = false;
+  oneAtATime = true;
 
   constructor(private titleService: Title, private renderer: Renderer2) {
     
