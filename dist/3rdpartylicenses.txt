@@ -120,6 +120,9 @@ SOFTWARE.
 
 
 
+ngx-typed-writer
+MIT
+
 rxjs
 Apache-2.0
                                Apache License

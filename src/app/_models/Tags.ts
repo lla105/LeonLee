@@ -13,6 +13,8 @@ export class Tag {
     static readonly WEKA = new Tag('Weka', '#660000');
     static readonly HTML = new Tag('HTML', '#ffa703');
     static readonly CSS = new Tag('CSS', '#1a66ff');
+    static readonly FIREBASE = new Tag('Firebase', '#45d996');
+
 
 
 

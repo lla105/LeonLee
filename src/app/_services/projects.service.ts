@@ -16,14 +16,14 @@ export class ProjectsService {
       tags: [Tag.PYTHON, Tag.TKINTER, Tag.GOOGLE_API, Tag.SQL] 
     },
     {id: 1, 
-      name: "Activity Auto Tracker (Android)", 
+      name: "BlueBox Management Portal", 
       pictures: ["../../assets/Android_bike.gif", "../../assets/Android_map.jpeg","../../assets/Android_weka.jpeg"], 
       projectLink: "https://github.com/lla105/MyRun2", 
-      summary: "An Android app that identifies & tracks user workout via Weka classifier.", 
+      summary: "A web application for managing client and BlueBox lockers within my current organization.", 
       description: `Collected activity data (standing, walking, running), applied Weka for machine learning, integrated the generated model into an app 
       for real-time activity identification. Implemented Google Maps API with a personal token to enable automatic GPS data tracking in the project.
       Utilized core smartphone functions (e.g., gyroscope, accelerometer) to determine speed and location, enhancing GPS data accuracy in the project.`,
-    tags: [Tag.KOTLIN, Tag.JAVA, Tag.GOOGLE_API, Tag.WEKA]
+    tags: [Tag.ANGULAR, Tag.JAVA, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.FIREBASE]
     },
     {id: 2, 
       name: "AI Class Project - SIPP", 
@@ -35,7 +35,7 @@ export class ProjectsService {
     },
     {id: 3, 
       name: "Pkt Forward & TCP Network", 
-      pictures: ["../../assets/packetforward.jpeg","../../assets/TCP.jpeg","../../assets/TCP2.jpeg"], 
+      pictures: ["../../assets/packetforward.jpeg","../../assets/TCP.jpeg","../../assets/TCP3.jpeg"], 
       projectLink: "https://github.com/lla105/Networking-Simulator", 
       summary: "C++/Python programs demonstrating the use of Routing Table and Client Server TCP data communication.", 
       description: "● A C++/Python program that demonstrates packet forwarding with Routing Table with a given destination IP address.\n ●In addition, it simulates client-server interaction over TCP with added functions for packet loss and corruption simulation.", 
@@ -48,6 +48,16 @@ export class ProjectsService {
       summary: "An Angular webpage built to showcase my software journey.", 
       description: "", 
       tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS]
+    },
+    {id: 5, 
+      name: "Activity Auto Tracker (Android)", 
+      pictures: ["../../assets/Android_bike.gif", "../../assets/Android_map.jpeg","../../assets/Android_weka.jpeg"], 
+      projectLink: "https://github.com/lla105/MyRun2", 
+      summary: "An Android app that identifies & tracks user workout via Weka classifier.", 
+      description: `Collected activity data (standing, walking, running), applied Weka for machine learning, integrated the generated model into an app 
+      for real-time activity identification. Implemented Google Maps API with a personal token to enable automatic GPS data tracking in the project.
+      Utilized core smartphone functions (e.g., gyroscope, accelerometer) to determine speed and location, enhancing GPS data accuracy in the project.`,
+    tags: [Tag.KOTLIN, Tag.JAVA, Tag.GOOGLE_API, Tag.WEKA]
     },
 
   ];
