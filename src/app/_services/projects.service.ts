@@ -11,8 +11,8 @@ export class ProjectsService {
       name: "CRM Accounting Software", 
       pictures: ["../../assets/Au2.gif","../../assets/Au1.jpeg","../../assets/Au3.jpeg"], 
       projectLink: "https://github.com/lla105/AuTransactions", 
-      summary: "A paid project for managing a client's day care business.", 
-      description: "a CRM & accounting solution in Python with tkinter GUI, Google API, and MySQL, achieving a 50% reduction in dataretrieval time compared to previous system.", 
+      summary: "A paid project for managing my client's day care business.", 
+      description: "a CRM & accounting solution in Python with tkinter GUI, Google API, and MySQL, achieving a 50% reduction in data retrieval time compared to previous system.", 
       tags: [Tag.PYTHON, Tag.TKINTER, Tag.GOOGLE_API, Tag.SQL] 
     },
     {id: 1, 
@@ -34,7 +34,7 @@ export class ProjectsService {
       tags: [Tag.PYTHON]
     },
     {id: 3, 
-      name: "Packet Forwarding & Client Server TCP", 
+      name: "Pkt Forward & TCP Network", 
       pictures: ["../../assets/packetforward.jpeg","../../assets/TCP.jpeg","../../assets/TCP2.jpeg"], 
       projectLink: "https://github.com/lla105/Networking-Simulator", 
       summary: "C++/Python programs demonstrating the use of Routing Table and Client Server TCP data communication.", 
@@ -43,7 +43,7 @@ export class ProjectsService {
     },
     {id: 4, 
       name: "This Porfolio Website", 
-      pictures: ["../../assets/p1.png","../../assets/p2.png","../../assets/p3.png"], 
+      pictures: ["../../assets/Angular1.gif","../../assets/Angular1.gif","../../assets/Angular1.gif"], 
       projectLink: "https://github.com/lla105/AngularPortfolioWebsite", 
       summary: "An Angular webpage built to showcase my software journey.", 
       description: "", 
