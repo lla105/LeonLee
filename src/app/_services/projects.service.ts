@@ -17,7 +17,7 @@ export class ProjectsService {
     },
     {id: 1, 
       name: "BlueBox Management Portal", 
-      pictures: ["../../assets/Android_bike.gif", "../../assets/Android_map.jpeg","../../assets/Android_weka.jpeg"], 
+      pictures: ["../../assets/bb1.gif", "../../assets/bb2.jpeg","../../assets/bb3.jpeg"], 
       projectLink: "https://github.com/lla105/MyRun2", 
       summary: "A web application for managing client and BlueBox lockers within my current organization.", 
       description: `Collected activity data (standing, walking, running), applied Weka for machine learning, integrated the generated model into an app 
