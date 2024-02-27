@@ -7,11 +7,12 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ResumeComponent } from './resume/resume.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: 'contact', component: ContactComponent},
-  {path: 'resume', component: ResumeComponent},
-  {path: 'portfolio', component: PortfolioComponent},
-  {path: '**', component: HomeComponent, pathMatch: 'full'} // for invalid paths, go home.
+  { path: 'home', component: HomeComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'resume', component: ResumeComponent },
+  { path: 'portfolio', component: PortfolioComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', component: HomeComponent, pathMatch: 'full' },
 ];
 
 @NgModule({
