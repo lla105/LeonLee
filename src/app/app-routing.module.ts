@@ -6,7 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ResumeComponent } from './resume/resume.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'resume', component: ResumeComponent },

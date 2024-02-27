@@ -17,8 +17,11 @@ import { ProjectModalComponent } from './project-modal/project-modal.component'
 import { CarouselModule } from 'ngx-bootstrap/carousel'
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { FormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule, provideAnimations } from '@angular/platform-browser/animations';
 import { NgxTypedWriterModule } from 'ngx-typed-writer';
+import { provideRouter, withComponentInputBinding, withInMemoryScrolling, withViewTransitions } from '@angular/router';
+import { routes } from './app-routing.module'
+import { provideHttpClient, withJsonpSupport } from '@angular/common/http';
 
 
 @NgModule({
@@ -45,7 +48,17 @@ import { NgxTypedWriterModule } from 'ngx-typed-writer';
     NgxTypedWriterModule
 
   ],
-  providers: [],
+  providers: [
+    provideRouter(
+      routes,
+      withViewTransitions(),
+      withComponentInputBinding(),
+      withInMemoryScrolling({scrollPositionRestoration: 'enabled'})
+      ),
+      provideAnimations(),
+      provideHttpClient(withJsonpSupport()
+      ),
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
