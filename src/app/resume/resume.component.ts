@@ -11,7 +11,7 @@ export class ResumeComponent {
   isWorkExperienceOpen: boolean = false;
   isEducationOpen: boolean = false;
   isSkillsOpen: boolean = false;
-  
+
   constructor(private titleService: Title, private renderer: Renderer2) {
     
     this.titleService.setTitle('Leon Lee - Resume')
@@ -21,7 +21,7 @@ export class ResumeComponent {
     const link = this.renderer.createElement('a')
     link.setAttribute('target', '_blank')
     link.setAttribute('href', '../../assets/Leon_Lee_Resume2.pdf')
-    link.setAttribute('download', 'Resume.pdf')
+    link.setAttribute('download', 'Leon_Lee_Resume.pdf')
     link.click()
     link.remove()
   }

@@ -1,19 +1,17 @@
 .jumbotron {
-    padding: 2rem 1rem;
-    background-color: #e9ecef;
+  padding: 2rem 1rem;
+  background-color: #e9ecef;
 }
 
-/* Style for the nav-link in general */
 .nav-link {
-    font-size: 16px; /* Adjust the font size as needed */
-  }
+  font-size: 16px; 
+}
   
-  /* Style for the nav-link when the route is active */
-  .nav-link.active-link {
-    font-weight: bold;
-    text-decoration: underline rgb(79, 172, 219) solid 2px; /* Adjust the color and thickness as needed */
-    text-underline-offset: 4px; /* Adjust the offset as needed */
-  }
+.nav-link.active-link {
+  font-weight: bold;
+  text-decoration: underline rgb(79, 172, 219) solid 2px; 
+  text-underline-offset: 4px; 
+}
   
   
   
