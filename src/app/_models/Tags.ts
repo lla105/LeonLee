@@ -2,10 +2,10 @@ export class Tag {
     // define a tag named ANGULAR. the static readonly variables are our enum.
     static readonly ANGULAR = new Tag('Angular', 'red');
     static readonly TYPESCRIPT = new Tag('TypeScript', '#4d88ff');
-    static readonly PYTHON = new Tag('Python', 'pink');
+    static readonly PYTHON = new Tag('Python', '#51a3b8');
     static readonly C = new Tag('C', 'green');
     static readonly Cpp = new Tag('C++', 'orange');
-    static readonly TKINTER = new Tag('Tkinter', '#6e6e6e');
+    static readonly TKINTER = new Tag('Tkinter', '#9c6280');
     static readonly GOOGLE_API = new Tag('Google Cloud Api', '#0F9D58');
     static readonly SQL = new Tag('SQL', '#b34a04');
     static readonly KOTLIN = new Tag('Kotlin', '#b41dc2');
