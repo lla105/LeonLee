@@ -21,7 +21,7 @@ export class ResumeComponent {
   DownloadFile() {
     const link = this.renderer.createElement('a')
     link.setAttribute('target', '_blank')
-    link.setAttribute('href', '../../assets/Leon_Lee_Resume2.pdf')
+    link.setAttribute('href', '../../assets/Leon_Lee_Resume.pdf')
     link.setAttribute('download', 'Leon_Lee_Resume.pdf')
     link.click()
     link.remove()

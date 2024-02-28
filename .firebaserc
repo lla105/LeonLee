@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "angularportfoliowebsite"
-  }
+    "default": "leonleeportfolio",
+    "what": "leonleeportfolio",
+    "leonleeportfolio": "leonleeportfolio"
+  },
+  "targets": {},
+  "etags": {}
 }
