@@ -12,17 +12,16 @@ export class ProjectsService {
       pictures: ["../../assets/Au2.gif","../../assets/Au1.jpeg","../../assets/Au3.jpeg"], 
       projectLink: "https://github.com/lla105/AuTransactions", 
       summary: "A paid project for managing my client's day care business.", 
-      description: "a CRM & accounting solution in Python with tkinter GUI, Google API, and MySQL, achieving a 50% reduction in data retrieval time compared to previous system.", 
+      description: "A Customer Relationship Management (CRM) & accounting solution written in Python with tkinter GUI, Google API, and MySQL, achieving a 50% reduction in data retrieval time compared to previous system.", 
       tags: [Tag.PYTHON, Tag.TKINTER, Tag.GOOGLE_API, Tag.SQL] 
     },
     {id: 1, 
-      name: "BlueBox Management Portal", 
+      name: "BlueBox Management Portal (Work)", 
       pictures: ["../../assets/bb1.gif", "../../assets/bb2.jpeg","../../assets/bb3.jpeg"], 
       projectLink: "https://github.com/lla105/MyRun2", 
-      summary: "A web application for managing client and BlueBox lockers within my current organization.", 
-      description: `Collected activity data (standing, walking, running), applied Weka for machine learning, integrated the generated model into an app 
-      for real-time activity identification. Implemented Google Maps API with a personal token to enable automatic GPS data tracking in the project.
-      Utilized core smartphone functions (e.g., gyroscope, accelerometer) to determine speed and location, enhancing GPS data accuracy in the project.`,
+      summary: "A web app for managing client and BlueBox lockers within my current organization.", 
+      description: `Preface: BlueBox are physical lockers. They can be controlled via this Management webpage or our mobile app. \nAs we scale, we had run into performance issues, resulting in long load times.
+      We improved these issues by >90% via a combination of pagination, promises, and observables. We use our in-house data encryption method, and perform most communication with our customer RESTFUL API.`,
     tags: [Tag.ANGULAR, Tag.JAVA, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.FIREBASE]
     },
     {id: 2, 
@@ -46,7 +45,7 @@ export class ProjectsService {
       pictures: ["../../assets/Angular1.gif","../../assets/Angular1.gif","../../assets/Angular1.gif"], 
       projectLink: "https://github.com/lla105/AngularPortfolioWebsite", 
       summary: "An Angular webpage built to showcase my software journey.", 
-      description: "", 
+      description: "My Angular portfolio website with ngx bootstrap.\n ", 
       tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS]
     },
     {id: 5, 

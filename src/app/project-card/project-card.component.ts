@@ -2,6 +2,7 @@ import { Component , Input} from '@angular/core';
 import { Project } from '../_models/Project';
 import { BsModalRef, BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
 import { ProjectModalComponent } from '../project-modal/project-modal.component';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-project-card',
@@ -12,7 +13,7 @@ export class ProjectCardComponent {
   @Input() project = {} as Project;
   bsModalRef?: BsModalRef; // a reference to our modal
 
-  constructor(private modalService: BsModalService) {
+  constructor(private modalService: BsModalService, private sanitizer: DomSanitizer) {
     
   }
 
@@ -25,4 +26,10 @@ export class ProjectCardComponent {
     }
     this.bsModalRef = this.modalService.show(ProjectModalComponent, modalOptions);
   }
+
+  getFormattedSummary(): SafeHtml {
+    const formattedSummary = this.project.summary.replace(/\n/g, '<br>');
+    return this.sanitizer.bypassSecurityTrustHtml(formattedSummary);
+  }
+  
 }
