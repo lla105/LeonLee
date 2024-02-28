@@ -18,10 +18,13 @@ export class ProjectsService {
     {id: 1, 
       name: "BlueBox Management Portal (Work)", 
       pictures: ["../../assets/bb1.gif", "../../assets/bb2.jpeg","../../assets/bb3.jpeg"], 
-      projectLink: "https://github.com/lla105/MyRun2", 
+      projectLink: "https://dev.bluemyth.ca/", 
       summary: "A web app for managing client and BlueBox lockers within my current organization.", 
       description: `Preface: BlueBox are physical lockers, controlled via this management webpage or our mobile app. \nAs we scale, we had run into performance issues, resulting in long load times.
-      We improved these issues by >90% via a combination of pagination, promises, and observables. We use our in-house data encryption method, and perform most communication with custom RESTFUL API.`,
+      We improved these issues by >90% via a combination of pagination, promises, and observables. We use our in-house data encryption method, and perform most communication with custom RESTFUL API.
+      Demo URL: https://dev.bluemyth.ca/
+      Login: demo
+      Password: demo2024`,
     tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.FIREBASE]
     },
     {id: 2, 

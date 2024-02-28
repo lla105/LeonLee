@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 import { Project } from '../_models/Project';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-project-modal',
@@ -11,7 +12,7 @@ export class ProjectModalComponent {
 
   project = {} as Project;
   
-  constructor(public bsModalRef: BsModalRef) {
+  constructor(public bsModalRef: BsModalRef, private sanitizer: DomSanitizer) {
 
   }
 
@@ -21,6 +22,9 @@ export class ProjectModalComponent {
   
   isImage(item: string): boolean {
     return item.endsWith('.png') || item.endsWith('.jpg') || item.endsWith('.jpeg');
+  }
+  getSanitizedDemoUrl(): SafeResourceUrl {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(this.project.projectLink);
   }
   
 }

@@ -15,11 +15,22 @@
     </carousel>
 
     <h3 class="mt-2">Description</h3>
+
+
     <div style="padding: 5px" class="card-text">
       <div *ngFor="let line of project.description.split('\n')">
-        {{ line }}
+        <ng-container *ngIf="line.includes('Demo URL:')">
+          <p></p>
+          <span>Demo URL: <a [href]="project.projectLink" target="_blank">{{ line.slice(line.indexOf('https:')) }}</a></span>
+        </ng-container>
+        <div *ngIf="!line.includes('Demo URL:')">{{ line }}</div>
       </div>
     </div>
+    
+    
+
+
+
     <div style="height:5px;"></div>
     
     <p>You can find this project on Github <a href={{project.projectLink}} target="_blank">here</a> 
