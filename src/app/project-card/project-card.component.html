@@ -4,7 +4,12 @@
     <div class="card-content" style="padding:2%">
         <div style="height:10px;"></div>
 
+        <div *ngIf="project.id==0 || project.id==1 || project.id==2">
+            <img src="assets/star-icon2.png" alt="star-icon" style="position: absolute; top: 5px; right: 0px; width: 30px; height: 30px;">
+        </div>
+
         <h5 class="card-title text-center"><strong>{{project.name}}</strong></h5>
+
         <p style="overflow: hidden; padding:5px" class="card-text">{{project.summary}}</p> 
         
     </div>

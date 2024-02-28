@@ -10,7 +10,7 @@ export class Tag {
     static readonly SQL = new Tag('SQL', '#b34a04');
     static readonly KOTLIN = new Tag('Kotlin', '#b41dc2');
     static readonly JAVA = new Tag('Java', '#d99d11');
-    static readonly WEKA = new Tag('Weka', '#660000');
+    static readonly WEKA = new Tag('Machine Learning', '#660000');
     static readonly HTML = new Tag('HTML', '#ffa703');
     static readonly CSS = new Tag('CSS', '#1a66ff');
     static readonly FIREBASE = new Tag('Firebase', '#45d996');

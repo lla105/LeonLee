@@ -59,7 +59,7 @@ export class ProjectsService {
       description: `Collected activity data (standing, walking, running), applied Weka for machine learning, integrated the generated model into an app 
       for real-time activity identification. Implemented Google Maps API with a personal token to enable automatic GPS data tracking in the project.
       Utilized core smartphone functions (e.g., gyroscope, accelerometer) to determine speed and location, enhancing GPS data accuracy in the project.`,
-    tags: [Tag.KOTLIN, Tag.JAVA, Tag.GOOGLE_API, Tag.WEKA]
+    tags: [Tag.KOTLIN,Tag.WEKA, Tag.GOOGLE_API, Tag.JAVA ]
     },
 
   ];
