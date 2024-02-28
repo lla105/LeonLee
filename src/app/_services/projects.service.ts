@@ -44,12 +44,13 @@ export class ProjectsService {
       tags: [Tag.Cpp, Tag.PYTHON]
     },
     {id: 4, 
-      name: "This Porfolio Website", 
+      name: "This Portfolio Website", 
       pictures: ["../../assets/Angular1.gif","../../assets/Angular1.gif","../../assets/Angular1.gif"], 
       projectLink: "https://github.com/lla105/AngularPortfolioWebsite", 
-      summary: "An Angular webpage built to showcase my software journey.", 
-      description: "My Angular portfolio website with ngx bootstrap.\n ", 
-      tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS]
+      summary: `An Angular webpage built to showcase my software journey.`, 
+      description: `My Angular portfolio website with ngx bootstrap.\n 
+      Deployed with Firebase`, 
+      tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.FIREBASE]
     },
     {id: 5, 
       name: "Activity Auto Tracker (Android)", 
