@@ -22,7 +22,7 @@ export class ProjectsService {
       summary: "A web app for managing client and BlueBox lockers within my current organization.", 
       description: `Preface: BlueBox are physical lockers. They can be controlled via this Management webpage or our mobile app. \nAs we scale, we had run into performance issues, resulting in long load times.
       We improved these issues by >90% via a combination of pagination, promises, and observables. We use our in-house data encryption method, and perform most communication with our customer RESTFUL API.`,
-    tags: [Tag.ANGULAR, Tag.JAVA, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.FIREBASE]
+    tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.FIREBASE]
     },
     {id: 2, 
       name: "AI Class Project - SIPP", 
