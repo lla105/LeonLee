@@ -22,7 +22,18 @@ import { NgxTypedWriterModule } from 'ngx-typed-writer';
 import { provideRouter, withComponentInputBinding, withInMemoryScrolling, withViewTransitions } from '@angular/router';
 import { routes } from './app-routing.module'
 import { provideHttpClient, withJsonpSupport } from '@angular/common/http';
+// import { AngularFireModule } from '@angular/fire';
+// import { AngularFireAnalyticsModule, ScreenTrackingService, UserTrackingService } from '@angular/fire/analytics';
 
+
+const firebaseConfig = {
+  apiKey: 'YOUR_API_KEY',
+  authDomain: 'YOUR_AUTH_DOMAIN',
+  projectId: 'YOUR_PROJECT_ID',
+  storageBucket: 'YOUR_STORAGE_BUCKET',
+  messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+  appId: 'YOUR_APP_ID'
+};
 
 @NgModule({
   declarations: [
