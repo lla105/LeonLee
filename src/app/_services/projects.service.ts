@@ -19,7 +19,7 @@ export class ProjectsService {
       name: "BlueBox Management Portal (Work)", 
       pictures: ["../../assets/bb1.gif", "../../assets/bb2.jpeg","../../assets/bb3.jpeg"], 
       projectLink: "https://dev.bluemyth.ca/", 
-      summary: "A web app for managing client and BlueBox lockers within my current organization.", 
+      summary: "A website for managing client and BlueBox lockers within my current organization.", 
       description: `Preface: BlueBox are physical lockers, controlled via this management webpage or our mobile app. \nAs we scale, we had run into performance issues, resulting in long load times.
       We improved these issues by >90% via a combination of pagination, promises, and observables. We use our in-house data encryption method, and perform most communication with custom RESTFUL API.
       Demo URL: https://dev.bluemyth.ca/
@@ -28,12 +28,14 @@ export class ProjectsService {
     tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.FIREBASE]
     },
     {id: 2, 
-      name: "AI Class Project - SIPP", 
-      pictures: ["../../assets/MAPF1.gif","../../assets/MAPF2.gif","../../assets/MAPF3.jpeg"], 
-      projectLink: "https://github.com/lla105/417Project", 
-      summary: "A Python-based Safe Interval Path Planning (SIPP) system for Multi-Agent Path Planning.", 
-      description: "● Developed and implemented SIPP search algorithms in Python for Multi Agent Path Planning (MAPF) via Cooperative A* and Conflict-Based Search (CBS).\n● Also implemented Single Agent Path Planning via A* and SIPP.\n● Benchmarked the combination of the above four algorithms on diverse instances to analyze performance metrics like speed, nodes expanded, and memory usage. Instance classes include agents, map density, and obstacles.", 
-      tags: [Tag.PYTHON]
+      name: "Activity Auto Tracker (Android)", 
+      pictures: ["../../assets/Android_bike.gif", "../../assets/Android_map.jpeg","../../assets/Android_weka.jpeg"], 
+      projectLink: "https://github.com/lla105/MyRun2", 
+      summary: "An Android app that identifies & tracks user workout via Weka classifier.", 
+      description: `Collected activity data (standing, walking, running), applied Weka for machine learning, integrated the generated model into an app 
+      for real-time activity identification. Implemented Google Maps API with a personal token to enable automatic GPS data tracking in the project.
+      Utilized core smartphone functions (e.g., gyroscope, accelerometer) to determine speed and location, enhancing GPS data accuracy in the project.`,
+    tags: [Tag.KOTLIN,Tag.WEKA, Tag.GOOGLE_API, Tag.JAVA ]
     },
     {id: 3, 
       name: "Pkt Forward & TCP Network", 
@@ -53,14 +55,12 @@ export class ProjectsService {
       tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.FIREBASE]
     },
     {id: 5, 
-      name: "Activity Auto Tracker (Android)", 
-      pictures: ["../../assets/Android_bike.gif", "../../assets/Android_map.jpeg","../../assets/Android_weka.jpeg"], 
-      projectLink: "https://github.com/lla105/MyRun2", 
-      summary: "An Android app that identifies & tracks user workout via Weka classifier.", 
-      description: `Collected activity data (standing, walking, running), applied Weka for machine learning, integrated the generated model into an app 
-      for real-time activity identification. Implemented Google Maps API with a personal token to enable automatic GPS data tracking in the project.
-      Utilized core smartphone functions (e.g., gyroscope, accelerometer) to determine speed and location, enhancing GPS data accuracy in the project.`,
-    tags: [Tag.KOTLIN,Tag.WEKA, Tag.GOOGLE_API, Tag.JAVA ]
+      name: "AI Class Project - SIPP", 
+      pictures: ["../../assets/MAPF1.gif","../../assets/MAPF2.gif","../../assets/MAPF3.jpeg"], 
+      projectLink: "https://github.com/lla105/417Project", 
+      summary: "A Python-based Safe Interval Path Planning (SIPP) system for Multi-Agent Path Planning.", 
+      description: "● Developed and implemented SIPP search algorithms in Python for Multi Agent Path Planning (MAPF) via Cooperative A* and Conflict-Based Search (CBS).\n● Also implemented Single Agent Path Planning via A* and SIPP.\n● Benchmarked the combination of the above four algorithms on diverse instances to analyze performance metrics like speed, nodes expanded, and memory usage. Instance classes include agents, map density, and obstacles.", 
+      tags: [Tag.PYTHON]
     },
 
   ];
